@@ -35,13 +35,13 @@ def search(update: Update, context: CallbackContext):
 
     if len(args) == 0:
         update.message.reply_text(
-            "Please type something. For example " "/search Elon Musk"
+            "Lütfen bir şey yazın. Örn: /search Osmanlı Devleti"
         )
     else:
         search_text = " ".join(args)
         logging.info("sending request to Wikipedia API")
         response = requests.get(
-            "https://en.wikipedia.org/w/api.php",
+            "https://tr.wikipedia.org/w/api.php",
             {
                 "action": "opensearch",
                 "search": search_text,
