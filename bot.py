@@ -24,7 +24,7 @@ updater = Updater(token)
 
 def start(update: Update, context: CallbackContext):
     update.message.reply_text(
-        "Hi !  Welcome to the Wikipedia bot! In order to find something type /search and your request. For example /search Ibn Rushd"
+        "Merhaba! Wikipedia botuna hoşgeldiniz! Bir şey bulmak için /search  ve isteğinizi yazın. Örn: /search Mustafa Kemal Atatürk"
     )
 
 
